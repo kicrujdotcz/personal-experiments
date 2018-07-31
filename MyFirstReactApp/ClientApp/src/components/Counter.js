@@ -26,6 +26,8 @@ export class Counter extends Component {
       currentCount: this.state.currentCount - 1
     });
   }
+  
+
 
   render() {
     return (
@@ -37,6 +39,7 @@ export class Counter extends Component {
         <p>Current count: <strong>{this.state.currentCount}</strong></p>
 
         <button onClick={this.incrementCounter}>Increment</button>
+        <button onClick={this.incrementCounterBy10}>Increment +10</button>
         <button onClick={this.decrementCounter}>Decrement</button>
       </div>
     );
